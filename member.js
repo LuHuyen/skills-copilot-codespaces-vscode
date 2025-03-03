@@ -1,3 +1,13 @@
-function skillMember() {
-    console.log('I am a member of the skill module');
+function skillMember(){
+    return {
+        restrict: 'E',
+        templateUrl: 'app/skill/member.html',
+        controller: 'MemberController',
+        controllerAs: 'memberCtrl'
+        bindToController: true
+        scope/ {
+            member: '='
+        }        
+
+    }};
 }
